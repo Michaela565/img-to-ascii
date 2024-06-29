@@ -7,9 +7,9 @@ def main():
     height = 100
     resize_img = cv.resize(img, (width, height))
     character_bank = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "=", "[", "]", ":", "{", "}", ";", "'", "|", ",", "<", ">", "?", "/", "~"]
-    for row in range(height):
-        pixel_count = 0
-        for col in range(width):
+    for row in range(width):
+        pixel_count = 0 # Var to check if we are at the end of the row
+        for col in range(height):
             pixel = resize_img[row, col]
             # print(pixel//10)
             character_select = pixel // 10
