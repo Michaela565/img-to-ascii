@@ -1,7 +1,8 @@
 import cv2 as cv
 
 def main():
-    img = cv.imread("kuromi.jpg", cv.IMREAD_GRAYSCALE)
+    img_path = "kuromi.jpg"
+    img = cv.imread(img_path, cv.IMREAD_GRAYSCALE)
     width = 100
     height = 100
     resize_img = cv.resize(img, (width, height))
