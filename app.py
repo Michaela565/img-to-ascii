@@ -1,5 +1,7 @@
 import cv2 as cv
 
+# TODO saving to a txt file
+
 def main():
     img_path = input("What's the path to your image? ")
     img = cv.imread(img_path, cv.IMREAD_GRAYSCALE)
